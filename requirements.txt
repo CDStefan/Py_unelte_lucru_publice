@@ -1,17 +1,5 @@
 openai
-langchain
-langchain-openai
-langchain-community
 python-dotenv
-llama_index 
-docx2txt 
-pypdf
 streamlit
 streamlit_authenticator
-chromadb
 tiktoken
-pytesseract
-pywin32
-openpyxl
-PyMuPDF
-fitz

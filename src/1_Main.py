@@ -64,7 +64,7 @@ if st.session_state["authentication_status"]:
         """
         )
 
-        st.sessio_state.api_key = st.secrets['OPENAI_API_KEY_petru.ionas']
+        st.sessio_state.api_key = st.secrets['OPENAI_API_KEY_FAGET']
         os.environ['OPENAI_API_KEY'] = st.sessio_state.api_key
 
     elif username == 'stefan.caravelea':
@@ -84,7 +84,7 @@ if st.session_state["authentication_status"]:
         """
         )
         
-        st.sessio_state.api_key = st.secrets['OPENAI_API_KEY_stefan.caravelea']
+        st.sessio_state.api_key = st.secrets['OPENAI_API_KEY_ADMIN']
         os.environ['OPENAI_API_KEY'] = st.sessio_state.api_key
 
 
