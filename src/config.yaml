@@ -1,0 +1,29 @@
+cookie:
+  expiry_days: 30
+  key: some_signature_key
+  name: some_cookie_name
+credentials:
+  usernames:
+    petru.ionas:
+      email: pentru.ionas@just.ro
+      logged_in: false
+      name: Petru Ionas
+      password: $2b$12$hhUnDcDkuZI5UnBqv1PcH.7Q7HvK7V7gR14tcBnqcj8cFCJmeq2nW
+    rbriggs:
+      email: rbriggs@gmail.com
+      logged_in: false
+      name: Rebecca Briggs
+      password: $2b$12$uNaTgvGPG9rMbzOJHYaPQePw0DUfp1qHBrSq6l4O304qani6pKFpm
+    rcouper:
+      email: rcouper@gmail.com
+      logged_in: false
+      name: Ross Couper
+      password: $2b$12$Tir/PbHVmmnt5kgNxgOwMuxNIb2fv2pJ.q71TW8ekvbugCqkye4yu
+    stefan.caravelea:
+      email: stefan.caravelea@just.ro
+      logged_in: true
+      name: Caravelea Stefan
+      password: $2b$12$O1zZ9E1R6.V1G56Bnq.yl.r/ju80OJHJ7HhSzPp1ZW1eTxFtFyy5.
+preauthorized:
+  emails:
+  - melsby@gmail.com
