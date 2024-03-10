@@ -30,9 +30,6 @@ hide_github_icon = """
 """
 st.markdown(hide_github_icon, unsafe_allow_html=True)
 
-# Set the initial state of the sidebar to "collapsed" so it's hidden by default
-st.set_page_config(InitialSideBarState ="collapsed")
-
 hide_bar= """
     <style>
     [data-testid="stSidebar"][aria-expanded="true"] > div:first-child {
