@@ -36,6 +36,14 @@ st.markdown(
     unsafe_allow_html=True
 )
 
+hide_github_icon = """
+#GithubIconMainMenu {
+  visibility: hidden;
+}
+"""
+
+st.markdown(hide_github_icon, unsafe_allow_html=True)
+
 hide_bar= """
     <style>
     [data-testid="stSidebar"][aria-expanded="true"] > div:first-child {
