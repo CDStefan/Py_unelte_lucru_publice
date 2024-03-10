@@ -34,10 +34,6 @@ hide_bar= """
     </style>
 """
 
-if 'api_key' not in st.session_state:
-    st.session_state.api_key = ""
-
-
 # Creating a login widget
     
 try:
@@ -63,9 +59,8 @@ if st.session_state["authentication_status"]:
     
         """
         )
-
-        st.sessio_state.api_key = st.secrets['OPENAI_API_KEY_FAGET']
-        os.environ['OPENAI_API_KEY'] = st.sessio_state.api_key
+        
+        os.environ['OPENAI_API_KEY'] = st.secrets['OPENAI_API_KEY_FAGET']
 
     elif username == 'stefan.caravelea':
         st.title('Secțiune administrator')
@@ -83,9 +78,8 @@ if st.session_state["authentication_status"]:
     
         """
         )
-        
-        st.sessio_state.api_key = st.secrets['OPENAI_API_KEY_ADMIN']
-        os.environ['OPENAI_API_KEY'] = st.sessio_state.api_key
+                
+        os.environ['OPENAI_API_KEY'] = st.secrets['OPENAI_API_KEY_ADMIN']
 
 
 
