@@ -38,6 +38,18 @@ def summarize_text(text_all):
     return formatted_output
 
 
+# Add custom CSS to hide the GitHub icon
+hide_github_icon = """
+<style>
+
+[data-testid="stToolbar"]
+{
+visibility:hidden;
+}
+</style>
+"""
+st.markdown(hide_github_icon, unsafe_allow_html=True)
+
 # Initialize Streamlit app
 st.title("Generează partea de la deliberând")
 
