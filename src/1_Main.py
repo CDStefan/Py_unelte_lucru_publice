@@ -22,6 +22,17 @@ authenticator = stauth.Authenticate(
     config['preauthorized']
 )
 
+# Add custom CSS to hide the GitHub icon
+hide_github_icon = """
+<style>
+#MainMenu {visibility: hidden;}
+</style>
+"""
+st.markdown(hide_github_icon, unsafe_allow_html=True)
+
+# Set the initial state of the sidebar to "collapsed" so it's hidden by default
+st.set_page_config(initial_sidebar_state="collapsed")
+
 hide_bar= """
     <style>
     [data-testid="stSidebar"][aria-expanded="true"] > div:first-child {
@@ -52,7 +63,7 @@ if st.session_state["authentication_status"]:
         Aplicația foloseștei interfața API de la OpenAI pentru a genera text.
         Din punct de vedere al securității datelor, acest tip de interogare a modelelor
         îndeplinește standardele europene și internaționale de confidențialitate a datelor.
-        ###Mai multe informații despre securitate și auditare se regăsesc la următoarele adrese:
+        ### Mai multe informații despre securitate și auditare se regăsesc la următoarele adrese:
         - Securitate [openai.com/security](https://openai.com/security)
         - Confidențialitate [openai.com/privacy](https://openai.com/enterprise-privacy)
         - Documente de auditare de acces [openai.trust](https://trust.openai.com/)
@@ -71,7 +82,7 @@ if st.session_state["authentication_status"]:
         Aplicația foloseștei interfața API de la OpenAI pentru a genera text.
         Din punct de vedere al securității datelor, acest tip de interogare a modelelor
         îndeplinește standardele europene și internaționale de confidențialitate a datelor.
-        ###Mai multe informații despre securitate și auditare se regăsesc la următoarele adrese:
+        ### Mai multe informații despre securitate și auditare se regăsesc la următoarele adrese:
         - Securitate [openai.com/security](https://openai.com/security)
         - Confidențialitate [openai.com/privacy](https://openai.com/enterprise-privacy)
         - Documente de auditare de acces [openai.trust](https://trust.openai.com/)
