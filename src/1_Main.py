@@ -40,7 +40,7 @@ st.markdown(
 hide_github_icon = """
 <style>
 
-[data-testid="stActionButtonIcon"]
+[data-testid="stToolbar"]
 {
 visibility:hidden;
 }
