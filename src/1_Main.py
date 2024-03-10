@@ -36,12 +36,12 @@ st.markdown(
     unsafe_allow_html=True
 )
 
+# Add custom CSS to hide the GitHub icon
 hide_github_icon = """
-#GithubIconMainMenu {
-  visibility: hidden;
-}
+<style>
+#MainMenu {visibility: hidden;}
+</style>
 """
-
 st.markdown(hide_github_icon, unsafe_allow_html=True)
 
 hide_bar= """
