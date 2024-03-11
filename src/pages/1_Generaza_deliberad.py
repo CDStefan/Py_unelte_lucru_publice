@@ -18,6 +18,7 @@ def summarize_text(text_all):
                         Parafrazează cererea în aproximativ 3000 de cuvinte. Păstrează obiectul acțiunii exact cum este menționat. 
                         Păstrează datele, numere documentelor și argumentele. 
                         Omite prudențialele precum numerele de telefon, adresele poștale si de email.
+                        Parafrazează fiecare argument invocat. Nu omite vreun argument.
                         Textul rezultat să aibă 3 părți: situația de fapt prezentată de parte; temeiurile de drept invocate; probele care solicită a fi administrate.
                         Rezultatul să fie în felul următorul: "A solicitat [...] "sau "A susținut că [...]"; În drept au fost invocate [...]; În probațiune a fost solicitată încuviințarea următoarelor probe [...]. Fără concluzii."""
             },
